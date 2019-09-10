@@ -42,13 +42,6 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/pagination/jquery.simplePagination.js',
-		'app/libs/mmenu/js/jquery.mmenu.all.min.js',
-		'app/libs/equalHeights/equalheights.js',
-		'app/libs/OwlCarousel/dist/owl.carousel.min.js',
-		'app/libs/owl.carousel2.thumbs/dist/owl.carousel2.thumbs.min.js',
-		'app/libs/fotorama/fotorama.js',
-		'app/libs/swiper/dist/js/swiper.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
