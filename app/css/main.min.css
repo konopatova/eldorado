@@ -1,12 +1,6 @@
 @charset "UTF-8";
-@import url(../libs/mmenu/css/jquery.mmenu.all.css);
 @import url(../libs/fontawesome/font-awesome.min.css);
 @import url(../libs/css-hamburgers/hamburgers.css);
-@import url(../libs/OwlCarousel/dist/assets/owl.carousel.min.css);
-@import url(../libs/OwlCarousel/dist/assets/owl.theme.default.min.css);
-@import url(../libs/fotorama/fotorama.css);
-@import url(../libs/swiper/dist/css/swiper.min.css);
-@import url(../libs/pagination/simplePagination.css);
 @font-face {
   font-family: 'PT Root';
   src: url("../fonts/Root_Regular.woff") format("woff");
