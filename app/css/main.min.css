@@ -388,8 +388,8 @@ html {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -420,8 +420,8 @@ html {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -434,8 +434,8 @@ html {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .no-gutters {
@@ -458,8 +458,8 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .col {
@@ -3216,9 +3216,68 @@ button, input[type="range"] {
   font-size: 30px;
   line-height: 133%;
   font-weight: 700;
+  margin-bottom: 54px;
+}
+
+.design__items__list {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.design__items__list .design__item {
+  font-weight: 500;
+  max-width: 223px;
+  font-size: 16px;
+  line-height: 150%;
+  margin-right: 20px;
+}
+
+.design__items__list .design__item .design__item__img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.design__items__list .design__item .design__item__img--2 {
+  margin-left: -25%;
+}
+
+.design__item--black {
+  background-color: #171717;
+  color: white;
+  font-size: 14px;
+  padding: 25px 18px 25px 15px;
+  -webkit-border-radius: 4%;
+          border-radius: 4%;
 }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1199.98px) {
+  .design__items__list .design__item {
+    max-width: 325px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .design__items__list .design__item {
+    max-width: 325px;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .design__items__list .design__item .design__item__img--2 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .design__items__list .design__item {
+    max-width: 290px;
+  }
+}
+
 /*==========  Mobile First  ==========*/
 
 /*# sourceMappingURL=../maps/main.min.css.map */

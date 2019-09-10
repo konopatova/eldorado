@@ -294,6 +294,37 @@ button, input[type="range"]  {
 	font-size: 30px;
 	line-height: 133%;
 	font-weight: 700;
+	margin-bottom: 54px;
 }
+
+.design__items__list {
+	justify-content: space-between;
+.design__item {
+	font-weight: 500;
+	max-width: 223px;
+	font-size: 16px;
+	line-height: 150%;
+	margin-right: 20px;
+	.design__item__img {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.design__item__img--2 {
+		margin-left: -25%;
+	}
+	}
+
+}
+
+.design__item--black {
+	background-color: #171717;
+	color: white;
+	font-size: 14px;
+	padding: 25px 18px 25px 15px;
+	border-radius: 4%;
+}
+
 
 @import "media"; // Always at the end

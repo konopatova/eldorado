@@ -4,12 +4,28 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-
+	.design__items__list {
+		.design__item {
+			max-width: 325px;
+}
+	}
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
+
+	.design__items__list {
+	.design__item {
+		max-width: 325px;
+		font-size: 14px;
+		margin-bottom: 50px;
+		.design__item__img--2 {
+			margin-left:0;
+		}
+	}
 }
+}
+
 // ≥768px
 @include media-breakpoint-down(sm) {
 
@@ -17,6 +33,11 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	.design__items__list {
+		.design__item {
+			max-width: 290px;
+			}
+		}
 }
 
 /*==========  Mobile First  ==========*/
