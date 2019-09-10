@@ -1,0 +1,299 @@
+@import "vars";
+
+@import "fonts";
+
+@import "libs";
+
+@import "mixins";
+
+::placeholder {
+	color: black;
+}
+
+::selection {
+	background-color: $eldorado;
+	color: black;
+}
+
+.container {
+	width: 100%;
+	min-width: 320px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 25px;
+	position: relative;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 150%;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	background-color: $bg;
+	input, textarea {
+		border: $accent 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border: $wrong 2px solid;
+		}
+		&:required:valid {
+			border: green 1px solid;
+		}}	
+}
+		
+.header {
+	width: 100%;
+	}
+
+
+main {
+  padding-bottom: 100px;
+  /*Высота футера*/
+}
+
+footer {
+  margin-top: -100px;
+  /*Минус Высота футера*/
+  height: 100px;
+  /*Высота футера*/
+}
+
+.is-active {
+	display: block;
+	visibility: visible;
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		transition: all 0.25s ease-in-out;
+	}
+}
+
+a:link {
+	color: $text;
+}
+
+button, input[type="range"]  {
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.header {
+	display: flex;
+	padding-top: 15px;
+	margin-bottom: 38px;
+.logo__block {
+	margin-right: 32px;
+	align-self: center;
+.header__logo__link {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-right: 22px;
+	&.header__logo__link--eld {
+		width: 35px;
+		height: 35px;
+		background-color: $eldorado;
+		border-radius: 10%;
+		&:hover {
+			transition: all 0.25s ease-in-out;
+			background-color: rgba($color:$eldorado, $alpha: 0.5);
+		}
+		img {
+			width: 24px;
+			height: 26px;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+	}
+	&.header__logo__link--mvideo {
+		width: 35px;
+		height: 35px;
+		background-color: $mvideo;
+		border-radius: 100%;
+		margin-right: 0;
+		&:hover {
+			transition: all 0.25s ease-in-out;
+			background-color: rgba($color:$mvideo, $alpha: 0.5);
+		}
+		img {
+			width: 23px;
+			height: 17px;
+			margin-left: 6px;
+			margin-top: 4px;
+		}
+	}}
+}
+}
+
+.header__title {
+	font-size: 14px;
+	color: rgba($color: #000000, $alpha: 0.7);
+	align-self: center;
+	font-weight: 500;
+	padding: 0;
+  margin: 0;
+}
+
+.burger__label {
+	cursor: pointer;
+	display: block;
+	width: 24px;
+	height: 16px;
+	box-sizing: border-box;
+}
+
+.burger__block {
+	width: 32px;
+	height: 32px;
+	margin-top: 14px;
+	align-self: center;
+	margin-left: auto;
+	display: block;
+	cursor: pointer;
+.burger {
+	display: block;
+  width: 24px;
+	height: 2px;
+	background-color: $mvideo;
+	&:before {
+	content: '';
+	position: relative;
+	top: -8px;
+	display: block;
+	width: 24px;
+	height:2px;
+	background-color: $mvideo;
+	transition: transform .3s linear;
+}
+	&:after {
+	content: '';
+	display: block;	
+	position: relative;
+	bottom: -6px;
+	width: 24px;
+	height: 2px;
+	background-color: $mvideo;
+	transition: transform .3s linear;
+}}
+}
+
+#menuToggle {
+  display: none; 
+}
+
+/*#menuToggle:checked ~ .menu-mobile {
+	max-width: 100%;
+	max-height: 600px;
+	overflow: visible;
+	transition: max-height .45s ease-in;
+	transition: max-width .45s ease-in;
+	z-index: 10;
+}*/
+
+#menuToggle:checked + .burger__label .burger {
+	visibility: hidden;
+}
+
+#menuToggle:checked + .burger__label .burger:before {
+	transform: rotate(40deg);
+	top: 0;
+	visibility: visible;
+	transition: transform .3s linear;
+}
+
+#menuToggle:checked + .burger__label .burger:after {
+	transform: rotate(-40deg);
+	bottom: 2px;
+	visibility: visible;
+	transition: transform .3s linear;
+}
+
+.line--red {
+	&:before {
+		content: '';
+		display: block;
+    margin-right: auto;
+    width: 207px;
+		margin-top: 4px;
+    margin-left: -39px;
+		width: 207px;
+		height: 3px;
+		background-color: $mvideo;
+	}
+}
+
+.line--grey {
+	&:before {
+		content: '';
+    display: block;
+    margin: 0 auto;
+    width: 974px;
+    left: 12px;
+    height: 1px;
+		background-color: rgba($color: #000000, $alpha: 0.3);
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+.main__title {
+	font-size: 38px;
+	line-height: 132%;
+	font-weight: 700;
+}
+
+
+.advantage__title {
+	font-size: 30px;
+	line-height: 133%;
+	font-weight: 700;
+}
+
+@import "media"; // Always at the end

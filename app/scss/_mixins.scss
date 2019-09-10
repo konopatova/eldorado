@@ -1,0 +1,70 @@
+//responsive
+@function rem($px) {
+	@return $px / 16px + 0rem;
+}
+
+
+%clearfix{
+	&:after, &:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+	}
+	
+  100% {
+    opacity: 1;
+  }
+
+}

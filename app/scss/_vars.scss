@@ -1,0 +1,21 @@
+
+$default-font: 'PT Root';
+$eldorado: #78BD20;
+$mvideo: #ED1D24;
+
+// vars
+$bg: white;
+$text: black;
+$accent: #78BD20;
+$btn-normal: #573930;
+$btn-active: #3f2923;
+$wrong: red;
+$disabled: #373737;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
