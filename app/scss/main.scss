@@ -308,9 +308,6 @@ button, input[type="range"]  {
 		line-height: 150%;
 		margin-right: 20px;
 		transition: all 0.25s ease-in-out;
-		.design__item__img--2 {
-			margin-left: -25%;
-			}
 			&:hover {
 				transform: scale(1.1);
 			}
@@ -379,7 +376,6 @@ button, input[type="range"]  {
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 150%;
-	//	max-width: 223px;
 		margin-right: 20px;
 		transition: all 0.25s ease-in-out;
 			&:hover {
@@ -407,5 +403,28 @@ button, input[type="range"]  {
 			margin-bottom: 46px;
 		}
 	}
+
+	.apps__items__list {
+		display: flex;
+		.apps__item {
+			font-size: 16px;
+			line-height: 150%;
+			font-weight: 500;
+			margin-bottom: 74px;
+			margin-right: 20px;
+			transition: all 0.25s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+			}
+			.apps__item__img {
+				width: 60px;
+				height: 60px;
+				display: block;
+				text-align: center;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+}
 
 @import "media"; // Always at the end

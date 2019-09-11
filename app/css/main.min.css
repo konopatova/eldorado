@@ -17509,10 +17509,6 @@ button, input[type="range"] {
   transition: all 0.25s ease-in-out;
 }
 
-.design__items__list .design__item .design__item__img--2 {
-  margin-left: -25%;
-}
-
 .design__items__list .design__item:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -17635,6 +17631,39 @@ button, input[type="range"] {
   margin-bottom: 46px;
 }
 
+.apps__items__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.apps__items__list .apps__item {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  margin-bottom: 74px;
+  margin-right: 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.apps__items__list .apps__item:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.apps__items__list .apps__item__img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .design__items__list .design__item {
@@ -17643,6 +17672,10 @@ button, input[type="range"] {
 }
 
 @media (max-width: 991.98px) {
+  .design__item__img--2 {
+    min-width: 325px;
+    max-width: 400px;
+  }
   .design__items__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -17667,10 +17700,13 @@ button, input[type="range"] {
 }
 
 @media (max-width: 767.98px) {
+  .design__item__img--2 {
+    min-width: 325px;
+    max-width: 400px;
+  }
   .accessories__items__list .accessories__item {
     font-weight: 500;
     font-size: 14px;
-    max-width: 325px;
     margin-right: 20px;
     margin-bottom: 50px;
     -webkit-transition: all 0.25s ease-in-out;
@@ -17694,24 +17730,29 @@ button, input[type="range"] {
   .shooting__items__list .shooting__item {
     font-size: 14px;
   }
+  .apps__items__list .apps__item {
+    max-width: 210px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575.98px) {
   .design__items__list .design__item {
     font-weight: 500;
-    max-width: 290px;
     margin-right: 20px;
     -webkit-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   }
   .design__items__list .design__item__img--2 {
-    margin-left: -25%;
+    min-width: 290px;
+    max-width: 400px;
   }
   .design__items__list .design__item--1,
   .design__items__list .design__item--2 {
     font-size: 14px;
     line-height: 150%;
+    max-width: 400px;
   }
   .design__items__list .design__item--3,
   .design__items__list .design__item--4 {
@@ -17747,6 +17788,56 @@ button, input[type="range"] {
     line-height: 142%;
     max-width: 142px;
     margin-right: 8px;
+  }
+  .apps__items__list .apps__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    font-size: 12px;
+    line-height: 142%;
+    font-weight: 500;
+    margin-bottom: 65px;
+    margin-right: 0px;
+    min-width: 290px;
+    max-width: 400px;
+  }
+  .apps__items__list .apps__item--2,
+  .apps__items__list .apps__item--4 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    margin-right: 0px;
+  }
+  .apps__items__list .apps__item__img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-right: 26px;
+    display: block;
+    text-align: center;
   }
 }
 
