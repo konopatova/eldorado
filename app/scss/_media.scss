@@ -15,29 +15,127 @@
 @include media-breakpoint-down(md) {
 
 	.design__items__list {
+		display: flex;
 	.design__item {
 		max-width: 325px;
 		font-size: 14px;
 		margin-bottom: 50px;
-		.design__item__img--2 {
-			margin-left:0;
+	}
+	.design__item--3,
+	.design__item--4 {
+		margin-bottom: 0;
 		}
+}
+
+
+.advantage__title {
+	&--visible {
+	display: none;
+	}
+	&--hidden {
+		display: block;
 	}
 }
+
+
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
 
+	
+.accessories__items__list {
+	.accessories__item {
+		font-weight: 500;
+		font-size: 14px;
+	  max-width: 325px;
+		margin-right: 20px;
+		margin-bottom: 50px;
+		transition: all 0.25s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		.accessories__item--3, 	.accessories__item--4 {
+			margin-bottom: 0px;
+		}
+	.accessories__item__img {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 46px;
+		}
+	}
+
+	.shooting__items__list {
+		.shooting__item {
+			font-size: 14px;
+	}}
+
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-	.design__items__list {
-		.design__item {
-			max-width: 290px;
+
+		.design__items__list {
+			.design__item {
+				font-weight: 500;
+				max-width: 290px;
+				margin-right: 20px;
+				transition: all 0.25s ease-in-out;
+				}
+				.design__item__img--2 {
+					margin-left:-25%;
+				}
+				.design__item--1,
+				.design__item--2 {
+					font-size: 14px;
+					line-height: 150%;
+				} 
+				.design__item--3,
+				.design__item--4 {
+					font-size: 12px;
+					line-height: 142%;
+					max-width: 142px;
+					margin-right: 8px;
+				} 
 			}
+
+		.header__title {
+			display: none;
 		}
+
+		.shooting__items__list {
+			.shooting__item {
+				font-size: 14px;
+				line-height: 150%;
+				padding-left: 0;
+				padding-top: 70px;
+				margin-bottom: 30px;
+				background-repeat: no-repeat;
+				min-height: 60px;
+				background-position: 50% -3%;
+				&.shooting__item--1 {
+					background-image: url(../img/shoot1.png);
+				}
+				&.shooting__item--2 {
+					background-image: url(../img/shoot2.png);
+				}
+				&.shooting__item--3 {
+					background-image: url(../img/shoot3.png);
+				}
+		}}
+
+		.accessories__items__list {
+			.accessories__item--3, 	
+				.accessories__item--4 {
+					font-size: 12px;
+					line-height: 142%;
+					max-width: 142px;
+					margin-right: 8px;
+				}
+}
+
 }
 
 /*==========  Mobile First  ==========*/

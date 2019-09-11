@@ -71,8 +71,7 @@ footer {
 }
 
 .hidden {
-	opacity: 0;
-	visibility: hidden;
+	display: none;
 }
 
 .img-responsive {
@@ -274,7 +273,7 @@ button, input[type="range"]  {
 		content: '';
     display: block;
     margin: 0 auto;
-    width: 974px;
+    width: 942px;
     left: 12px;
     height: 1px;
 		background-color: rgba($color: #000000, $alpha: 0.3);
@@ -295,28 +294,35 @@ button, input[type="range"]  {
 	line-height: 133%;
 	font-weight: 700;
 	margin-bottom: 54px;
+	&--hidden {
+		display: none;
+	}
 }
 
 .design__items__list {
 	justify-content: space-between;
-.design__item {
-	font-weight: 500;
-	max-width: 223px;
-	font-size: 16px;
-	line-height: 150%;
-	margin-right: 20px;
+	.design__item {
+		font-weight: 500;
+		max-width: 223px;
+		font-size: 16px;
+		line-height: 150%;
+		margin-right: 20px;
+		transition: all 0.25s ease-in-out;
+		.design__item__img--2 {
+			margin-left: -25%;
+			}
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	.design__item__img {
-		display: block;
-		text-align: center;
-		margin: 0 auto;
-		margin-bottom: 20px;
-	}
-	.design__item__img--2 {
-		margin-left: -25%;
-	}
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
 	}
 
-}
 
 .design__item--black {
 	background-color: #171717;
@@ -326,5 +332,80 @@ button, input[type="range"]  {
 	border-radius: 4%;
 }
 
+.subtitle {
+	display: block;
+	font-size: 14px;
+	line-height: 140%;
+	font-weight: 500;
+	padding-top: 5px;
+}
+
+.shooting__items__list {
+	display: flex;
+	justify-content: space-between;
+	.scaner__img {
+		margin-bottom: 30px;
+	}
+	.shooting__item {
+		max-width: 420px;
+		font-size: 16px;
+		line-height: 150%;
+		font-weight: 500;
+		padding-left: 100px;
+		margin-bottom: 40px;
+		background-repeat: no-repeat;
+		margin-right: auto;
+		min-height: 60px;
+		background-position-y: 50%;
+		transition: all 0.25s ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+		}
+		&.shooting__item--1 {
+			background-image: url(../img/shoot1.png);
+		}
+		&.shooting__item--2 {
+			background-image: url(../img/shoot2.png);
+		}
+		&.shooting__item--3 {
+			background-image: url(../img/shoot3.png);
+		}
+}}
+
+
+.accessories__items__list {
+	justify-content: space-between;
+	.accessories__item {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+	//	max-width: 223px;
+		margin-right: 20px;
+		transition: all 0.25s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		.accessories__item--3,
+		.accessories__item--4 {
+			&:before {
+				content: '';
+				display: block;
+				width: 50px;
+				height: 1px;
+				top: 0;
+				left: 0;
+				background-color: #000000;
+				margin-top: 10px;
+				margin-bottom: 20px;
+			}
+		}
+	.accessories__item__img {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 46px;
+		}
+	}
 
 @import "media"; // Always at the end
